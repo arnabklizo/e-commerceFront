@@ -1,0 +1,109 @@
+.errorSect {
+    min-height: calc(100vh - 151px);
+}
+
+.errorSect:before {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/background/errorfrnt.png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+    opacity: 0.1;
+}
+
+.errorSect:after {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/background/errorBack.png);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+    opacity: 0.2;
+}
+
+.errorSect h1 {
+    font-size: 100px;
+    font-weight: 900;
+}
+
+.errorBox {
+    max-width: 500px;
+    margin: auto;
+    min-height: calc(100vh - 151px);
+    gap: 20px;
+}
+
+.errorCode404 {
+    font-size: 400px;
+    top: 0%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.errorLogo {
+    font-size: 75px;
+    top: 5%;
+    opacity: 0.5;
+    animation: error 1s ease infinite;
+}
+
+.errorLogo i,
+.errorLogo svg path {
+    color: #e76f51;
+}
+
+
+@keyframes error {
+    0% {
+        top: 5%;
+    }
+
+    50% {
+        top: 7%;
+    }
+
+    100% {
+        top: 5%;
+    }
+}
+
+/* responsive  */
+@media(max-width:1399px) {}
+
+@media(max-width:1199px) {
+    .errorSect:after {
+        display: none;
+    }
+}
+
+@media(max-width:991px) {}
+
+@media(max-width:767px) {
+    .errorCode404 {
+        font-size: 250px;
+        top: 10%;
+    }
+}
+
+
+@media(max-width:575px) {
+    .errorSect h1 {
+        font-size: 75px;
+    }
+
+    .errorCode404 {
+        font-size: 200px;
+        top: 20%;
+    }
+}

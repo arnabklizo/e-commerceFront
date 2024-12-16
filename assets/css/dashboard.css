@@ -1,0 +1,90 @@
+/* dashboard main  */
+.dashBoardContainer {
+    height: calc(100vh - 126px);
+    overflow-y: auto;
+}
+
+.addPrdct svg path {
+    color: var(--bsWhite);
+}
+
+.dashTopper {
+    background-color: var(--baseClr);
+}
+
+.logohd {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--bsBlack);
+    border-radius: 50%;
+    color: var(--bsBlack);
+    background-color: var(--bsWhite);
+}
+
+
+.pannelDashed td span {
+    color: var(--bsBlack);
+}
+
+.pannelDashedleft tr td:first-child {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 600;
+    max-width: 100px;
+}
+
+.pannelDashed .paid {
+    background-color: #abe7cc;
+    padding: 3px 5px;
+    color: #06552f;
+    border-radius: 3px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.pannelDashed .pending {
+    padding: 3px 5px;
+    font-weight: 600;
+    color: #062f55;
+    text-transform: capitalize;
+    border-radius: 3px;
+    background-color: #c8c2e4;
+}
+
+.pannelDashedright tr td:first-child {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 600;
+    max-width: 300px;
+}
+
+
+
+/* responsive  */
+@media(max-width:1399px) {}
+
+@media(max-width:1199px) {}
+
+.itmHd {
+    width: 50%;
+}
+
+@media(max-width:991px) {
+    .adminMenuDRp {
+        margin-left: 0px;
+    }
+
+    .dashboardMenuPannel .dropdown-menu li {
+        width: auto;
+    }
+}
+
+@media(max-width:767px) {}
+
+
+@media(max-width:575px) {}

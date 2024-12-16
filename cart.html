@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FavIcon  -->
+    <link rel="apple-touch-icon" href="assets/Images/icon/favicon.png">
+    <link rel="shortcut icon" href="assets/Images/icon/favicon.png" type="image/x-icon">
+
+    <!-- css  -->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+
+    <!-- customized css  -->
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <!-- page CSS  -->
+    <link rel="stylesheet" href="assets/css/cart.css">
+
+    <title>Coral -- Cart</title>
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg py-3 me-0 sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-lg-none" href="index.html">
+                <img src="assets/images/icon/logo.png" alt="coral">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav w-40">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="categories.html">categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase " href="contact.html">contact</a>
+                    </li>
+                </ul>
+
+                <ul class="brand navbar-nav w-20 d-none d-lg-block">
+                    <li class="nav-item m-auto text-center">
+                        <a class="navbar-brand m-auto" href="index.html">
+                            <img src="assets/images/icon/logo.png" alt="coral">
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="rightpannel navbar-nav w-40 justify-content-end flex-row n pe-2">
+                    <li class="nav-item">
+                        <form class="d-flex navSearchForm" role="search mx-2">
+                            <input class="navSearch" type="text" placeholder="Search product">
+                            <button class="btn btnSearch" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                    </li>
+                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Cart"
+                        title="Cart">
+                        <button class="shoppingCart nav-link d-flex justify-content-center justify-content-lg-end mx-2"
+                            data-bs-toggle="offcanvas" data-bs-target="#shoppicartSlide"
+                            aria-controls="shoppicartSlide">
+                            <span class="d-none d-md-inline me-1"></span>
+                            <div class="position-relative">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span
+                                    class="position-absolute top-10 start-100 translate-middle badge rounded-pill bg-dark text-light">
+                                    3
+                                </span>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btnAcc" href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            data-bs-title="Wishlist" title="Wishlist">
+                            <span class="d-none d-md-inline me-1"></span>
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+
+                        <!-- <button class="btn btnAcc" data-bs-target="#accountBox" data-bs-toggle="modal">
+                                <span class="d-none d-md-inline me-1"></span>
+                                <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Account"
+                                    title="Account"><i class="fa-solid fa-user"></i></span>
+                            </button> -->
+
+
+                        <!-- after login profile button will be enable and login button will disable  -->
+
+
+
+                        <a class="btn btnAcc" href="profile.html" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            data-bs-title="Profile" title="Profile">
+                            <span class="d-none d-md-inline me-1"></span>
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+
+
+                    </li>
+                    <li class="nav-item">
+                        <button
+                            class="h-100  shoppingCart nav-link d-flex justify-content-center justify-content-lg-end mx-2 align-items-center">
+                            <div data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Logout"
+                                title="Logout">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                            </div>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main  -->
+    <section class="cartSection">
+        <div class="container">
+            <h1 class="text-center roboto sectHead text-capitalize text-dark pt-5 pageHeader my-2">
+                Checkout
+            </h1>
+
+            <div class="shoppingBag d-flex flex-column flex-lg-row justify-content-between rounded border p-3 pt-3">
+                <div>
+                    <h1 class="roboto text-dark fs-3 py-2 border-bottom">Shopping Bag</h1>
+                    <div class="text-dark">
+                        <span class="fw-bold text-dark">2</span>
+                        Items in your bag
+                    </div>
+                </div>
+                <div class="text-dark">
+                    Expected Delivery :
+                    <span class="text-dark fw-bold">Monday, November 28, 2024</span>
+                </div>
+            </div>
+
+            <div class="tableOfCart my-3 rounded border p-3 position-relative">
+                <div>
+                    <button class="delBtn fs-4 my-3 border-0 bg-transparent">
+                        <i class="fa-solid fa-trash-can me-2"></i>
+                        Delete Selected
+                    </button>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="cartarea">
+                            <div
+                                class="productCartCard m-1 rounded border position-relative d-flex flex-column flex-sm-row">
+                                <img src="assets/images/products/airZoom.jpg" alt="" class="cartDataImgPrdct">
+                                <button type="button" class="btn-close position-absolute top-0 end-0"
+                                    aria-label="Close"></button>
+                                <label class="selectOrder position-absolute top-0 start-0">
+                                    <input name="dummy" type="checkbox">
+                                    <span class="orderSpan"></span>
+                                </label>
+                                <div class="bodyOfCartCard p-2">
+                                    <h1 class="roboto fs-4 text-dark">Nike Air Zoom Pegasus</h1>
+                                    <div>Free Shipping</div>
+                                    <div class="py-1">
+                                        <span>
+                                            <span class="text-decoration-line-through hotcolor pe-1">
+                                                &#8377;<span class="price fw-bold hotcolor">2999</span>/
+                                            </span>
+                                            <span class="priceDetails fs-4 fw-bold">&#8377; 699 /-</span>
+                                        </span>
+                                    </div>
+                                    <div class="py-2">
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <button type="button" class="btn btn-dark">-</button>
+                                            <div
+                                                class="productNumb d-flex align-items-center justify-content-center border border-dark">
+                                                1
+                                            </div>
+                                            <button type="button" class="btn btn-dark">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="productCartCard m-1 rounded border position-relative d-flex flex-column flex-sm-row">
+                                <img src="assets/images/products/airZoom.jpg" alt="" class="cartDataImgPrdct">
+                                <button type="button" class="btn-close position-absolute top-0 end-0"
+                                    aria-label="Close"></button>
+                                <label class="selectOrder position-absolute top-0 start-0">
+                                    <input name="dummy" type="checkbox">
+                                    <span class="orderSpan"></span>
+                                </label>
+                                <div class="bodyOfCartCard p-2">
+                                    <h1 class="roboto fs-4 text-dark">Nike Air Zoom Pegasus</h1>
+                                    <div>Free Shipping</div>
+                                    <div class="py-1">
+                                        <span>
+                                            <span class="text-decoration-line-through hotcolor pe-1">
+                                                &#8377;<span class="price fw-bold hotcolor">2999</span>/
+                                            </span>
+                                            <span class="priceDetails fs-4 fw-bold">&#8377; 699 /-</span>
+                                        </span>
+                                    </div>
+                                    <div class="py-2">
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <button type="button" class="btn btn-dark">-</button>
+                                            <div
+                                                class="productNumb d-flex align-items-center justify-content-center border border-dark">
+                                                1
+                                            </div>
+                                            <button type="button" class="btn btn-dark">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="productCartCard m-1 rounded border position-relative d-flex flex-column flex-sm-row">
+                                <img src="assets/images/products/airZoom.jpg" alt="" class="cartDataImgPrdct">
+                                <button type="button" class="btn-close position-absolute top-0 end-0"
+                                    aria-label="Close"></button>
+                                <label class="selectOrder position-absolute top-0 start-0">
+                                    <input name="dummy" type="checkbox">
+                                    <span class="orderSpan"></span>
+                                </label>
+                                <div class="bodyOfCartCard p-2">
+                                    <h1 class="roboto fs-4 text-dark">Nike Air Zoom Pegasus</h1>
+                                    <div>Free Shipping</div>
+                                    <div class="py-1">
+                                        <span>
+                                            <span class="text-decoration-line-through hotcolor pe-1">
+                                                &#8377;<span class="price fw-bold hotcolor">2999</span>/
+                                            </span>
+                                            <span class="priceDetails fs-4 fw-bold">&#8377; 699 /-</span>
+                                        </span>
+                                    </div>
+                                    <div class="py-2">
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <button type="button" class="btn btn-dark">-</button>
+                                            <div
+                                                class="productNumb d-flex align-items-center justify-content-center border border-dark">
+                                                1
+                                            </div>
+                                            <button type="button" class="btn btn-dark">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="osrderSumm border rounded bg-white p-2">
+                            <h1 class="roboto fs-3 text-center text-dark">Order Summary</h1>
+                            <div class="border-top p-2 ">
+
+                                <div class="d-flex justify-content-between fs-5">
+                                    <span class="text-capitalize text-dark">Subtotal</span>
+                                    <span class="priceOrderedCart text-dark fw-bold">&#8377;
+                                        <span class="text-dark fw-bold"> 1234</span>
+                                    </span>
+                                </div>
+
+                                <div class="d-flex justify-content-between fs-5">
+                                    <span class="text-capitalize text-dark">Shipping</span>
+                                    <span class="priceOrderedCart text-dark fw-bold">
+                                        Free
+                                    </span>
+                                </div>
+
+                                <div class="d-flex justify-content-between fs-5">
+                                    <span class="text-capitalize text-dark">Discount</span>
+                                    <span class="priceOrderedCart text-dark fw-bold"> &#8377;
+                                        <span class="text-dark fw-bold"> 234</span>
+                                    </span>
+                                </div>
+
+                                <div class="d-flex mt-3 border-top py-1 border-dark justify-content-between fs-5">
+                                    <span class="text-capitalize text-dark">Total</span>
+                                    <span class="priceOrderedCart text-dark fw-bold"> &#8377;
+                                        <span class="text-dark fw-bold">1000</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="addressBox border rounded bg-white p-2 my-2">
+                            <h1 class="roboto fs-3 text-center text-dark">Shipping Address</h1>
+                            <div class="border-top p-2">
+                                <div class="address">
+                                    Address Line 1, Street, State/ Province /Region, City, Country, 714151
+                                    <div class="mobile py-1">0123456789</div>
+                                </div>
+                            </div>
+                            <div class="text-center border-top">
+                                <btn class="btn-dark btn my-2" data-bs-target="#changeAddressModal"
+                                    data-bs-toggle="modal">
+                                    Change Address</btn>
+                            </div>
+                        </div>
+
+                        <div class="my-2 py-2 text-center">
+                            <button class="btn btn-dark">Proceed to checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+    <!-- footer  -->
+    <footer class="border-top">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <a class="navbar-brand footerNavBrand mx-auto mx-lg-0 d-block" href="index.html">
+                        <img src="assets/images/icon/logo.png" alt="coral" class="w-100">
+                    </a>
+                    <p class="py-4 text-center text-lg-start">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua
+                    </p>
+                    <div
+                        class="socialFooter mb-5 mb-lg-0 d-flex align-items-center justify-content-lg-start justify-content-center">
+                        <a href="#" class="socialFooterLink text-decoration-none me-lg-3 me-0 px-2 px-lg-0">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="socialFooterLink text-decoration-none me-lg-3 me-0 px-2 px-lg-0">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="socialFooterLink text-decoration-none me-lg-3 me-0 px-2 px-lg-0">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="socialFooterLink text-decoration-none me-lg-3 me-0 px-2 px-lg-0">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="footerHead roboto fw-bold  ps-0 ps-lg-4  pb-3 pb-lg-4 text-center text-lg-start">CATALOG
+                    </div>
+                    <ul class="list-unstyled ps-0 ps-lg-4 mb-5 mb-lg-0">
+                        <li class="nav-item mb-2">
+                            <a href="show-products.html" class="nav-link text-capitalize active">Necklaces</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="show-products.html" class="nav-link text-capitalize active">hoodies</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="show-products.html" class="nav-link text-capitalize active">Jewelry Box</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="show-products.html" class="nav-link text-capitalize active">t-shirt</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="show-products.html" class="nav-link text-capitalize active">jacket</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="footerHead roboto fw-bold  ps-0 ps-lg-4  pb-3 pb-lg-4 text-center text-lg-start">ABOUT
+                        US</div>
+                    <ul class="list-unstyled  ps-0 ps-lg-4  mb-5 mb-lg-0">
+                        <li class="nav-item mb-2">
+                            <a href="about.html" class="nav-link text-capitalize active">About Us</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="terms.html" class="nav-link text-capitalize active">Terms & Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="footerHead roboto fw-bold  ps-0 ps-lg-4  pb-3 pb-lg-4 text-center text-lg-start">
+                        CUSTOMER SERVICES
+                    </div>
+                    <ul class="list-unstyled  ps-0 ps-lg-4  mb-5 mb-lg-0">
+                        <li class="nav-item mb-2">
+                            <a href="contact.html" class="nav-link text-capitalize active">Contact Us</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="profile.html" class="nav-link text-capitalize active">Track Your Order</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footerLast d-flex align-items-center justify-content-center">
+            <div class="m-auto text-light">
+                &copy; <span class="currentYear text-light">2024</span> - CORAL
+            </div>
+        </div>
+        <!-- back to top button  -->
+        <div class="backToTop d-none">
+            <i class="fa-solid fa-circle-up"></i>
+        </div>
+    </footer>
+
+
+
+    <!-- Modal -->
+    <!-- modal for Change Address  -->
+    <div class="modal fade" id="changeAddressModal" aria-hidden="true" aria-labelledby="changeAddressModalLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-dark" id="changeAddressModalLabel">Enter Shipping Address</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body position-relative">
+                    <form action="">
+                        <div class="form-floating mb-3">
+                            <input type="email" name="addressLine1" class="form-control" id="addressLine1"
+                                placeholder="name@example.com">
+                            <label for="addressLine1">Address Line 1</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="email" name="streetName" class="form-control" id="streetName"
+                                placeholder="name@example.com">
+                            <label for="streetName">Street</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="stateSelecets" aria-label="Floating label select example">
+                                <option selected>Open this select menu</option>
+                                <option value="andhrapradesh">Andhra Pradesh</option>
+                                <option value="westBangal">West Bengal</option>
+                                <option value="goa">Goa</option>
+                            </select>
+                            <label for="stateSelecets">State</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="email" name="newAddrCity" class="form-control" id="newAddrCity"
+                                placeholder="name@example.com">
+                            <label for="newAddrCity">City</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="countrySelects" aria-label="Floating label select example">
+                                <option selected>Open this select menu</option>
+                                <option value="india">India</option>
+                                <option value="amerca"> America</option>
+                                <option value="nepal">Nepal</option>
+                            </select>
+                            <label for="countrySelects">Country</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="email" name="zipCode" class="form-control" id="zipCode"
+                                placeholder="name@example.com">
+                            <label for="zipCode">Zip</label>
+                        </div>
+
+
+                        <div class="text-center pt-2">
+                            <button class="btn btn-dark" type="submit">Add new Address</button>
+                        </div>
+                    </form>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- js  -->
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/all.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/backToTop.js"></script>
+</body>
+
+</html>

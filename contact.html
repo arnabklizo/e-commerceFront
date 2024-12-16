@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FavIcon  -->
+    <link rel="apple-touch-icon" href="assets/Images/icon/favicon.png">
+    <link rel="shortcut icon" href="assets/Images/icon/favicon.png" type="image/x-icon">
+
+    <!-- css  -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- customized css  -->
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <!-- page css  -->
+    <link rel="stylesheet" href="assets/css/contact.css">
+
+    <title>Coral</title>
+</head>
+
+<body>
+
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg py-3 me-0 sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-lg-none" href="index.html">
+                <img src="assets/images/icon/logo.png" alt="coral">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav w-40">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="categories.html">categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase " href="contact.html">contact</a>
+                    </li>
+                </ul>
+
+                <ul class="brand navbar-nav w-20 d-none d-lg-block">
+                    <li class="nav-item m-auto text-center">
+                        <a class="navbar-brand m-auto" href="index.html">
+                            <img src="assets/images/icon/logo.png" alt="coral">
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="rightpannel navbar-nav w-40 justify-content-end flex-row n pe-2">
+                    <li class="nav-item">
+                        <form class="d-flex navSearchForm" role="search mx-2">
+                            <input class="navSearch" type="text" placeholder="Search product">
+                            <button class="btn btnSearch" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                    </li>
+                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Cart"
+                        title="Cart">
+                        <button class="shoppingCart nav-link d-flex justify-content-center justify-content-lg-end mx-2"
+                            data-bs-toggle="offcanvas" data-bs-target="#shoppicartSlide"
+                            aria-controls="shoppicartSlide">
+                            <span class="d-none d-md-inline me-1"></span>
+                            <div class="position-relative">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span
+                                    class="position-absolute top-10 start-100 translate-middle badge rounded-pill bg-dark text-light">
+                                    3
+                                </span>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btnAcc" href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            data-bs-title="Wishlist" title="Wishlist">
+                            <span class="d-none d-md-inline me-1"></span>
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+
+                        <!-- <button class="btn btnAcc" data-bs-target="#accountBox" data-bs-toggle="modal">
+                                    <span class="d-none d-md-inline me-1"></span>
+                                    <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Account"
+                                        title="Account"><i class="fa-solid fa-user"></i></span>
+                                </button> -->
+
+
+                        <!-- after login profile button will be enable and login button will disable  -->
+
+
+
+                        <a class="btn btnAcc" href="profile.html" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            data-bs-title="Profile" title="Profile">
+                            <span class="d-none d-md-inline me-1"></span>
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+
+
+                    </li>
+                    <li class="nav-item">
+                        <button
+                            class="h-100  shoppingCart nav-link d-flex justify-content-center justify-content-lg-end mx-2 align-items-center">
+                            <div data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Logout"
+                                title="Logout">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                            </div>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- main  -->
+    <section class="contactSection">
+        <div class="container mb-3">
+
+            <h1 class="text-center roboto sectHead text-capitalize text-dark pt-5 pageHeader">
+                Contact Us
+            </h1>
+            <p class=" heroAbout50 fw-bold text-center m-auto mb-3">
+                Any question or remarks? Just write us a message!
+            </p>
+            <div class="rounded border p-2 bg-white">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="position-relative h-100">
+                            <div
+                                class="rounded contactBlack bg-black p-2 h-100 d-flex flex-column justify-content-between">
+                                <h4 class="text-white roboto fw-bold py-2 text-sm-center">
+                                    Contact Information
+                                </h4>
+                                <div class="middleContactLeft d-flex flex-column justify-content-between p-2">
+                                    <div class="contacted d-flex text-white align-items-center">
+                                        <i class="fa-solid fa-phone-volume me-2"></i>
+                                        <a href="tell:+919876543210"
+                                            class="ContactNumbers text-decoration-none text-white">+91 9876 5432
+                                            10</a>
+                                    </div>
+                                    <div class="contacted d-flex text-white align-items-center">
+                                        <i class="fa-solid fa-envelope me-2"></i>
+                                        <a href="tell:+919876543210"
+                                            class="ContactNumbers text-decoration-none text-white">+91 9876 5432
+                                            10</a>
+                                    </div>
+                                    <div class="contacted d-flex text-white">
+                                        <i class="fa-solid fa-location-dot me-2 pt-1"></i>
+                                        <span class="ContactNumbers text-decoration-none text-white">
+                                            132 Dartmouth Street Boston, Massachusetts 02156 United States
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="socialContact d-flex">
+                                    <a href="#" class="socialLinks">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="socialLinks">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                    </a>
+                                    <a href="#" class="socialLinks">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" class="socialLinks">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="assets/images/background/Ellipse 793.png" alt=""
+                                class="position-absolute end-0 bottom-0 mxb">
+                            <img src="assets/images/background/Ellipse 794.png" alt="" class="msd position-absolute">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8 ">
+                        <div class="contactForm position-relative">
+
+                            <form action="">
+                                <div class="row p-3">
+                                    <div class="col-12 col-lg-6 d-flex flex-column mb-5 px-3">
+                                        <label for="mb-3 contactNameFirst">First name</label>
+                                        <input type="text" name="contactName" id="contactNameFirst">
+                                    </div>
+                                    <div class="col-12 col-lg-6 d-flex flex-column mb-5 px-3">
+                                        <label for="mb-3 contactNameLast">Last name</label>
+                                        <input type="text" name="contactName" id="contactNameLast">
+                                    </div>
+                                </div>
+                                <div class="row p-3">
+                                    <div class="col-12 col-lg-6 d-flex flex-column mb-5 px-3">
+                                        <label for="mb-3 contactEmail">Email</label>
+                                        <input type="text" name="contactEmail" id="contactEmail">
+                                    </div>
+                                    <div class="col-12 col-lg-6 d-flex flex-column mb-5 px-3">
+                                        <label for="mb-3 contactNamePhone">Phone Number</label>
+                                        <input type="text" name="contactNamePhone" id="contactNamePhone">
+                                    </div>
+                                </div>
+                                <div class="row p-3">
+                                    <div class="col-12 d-flex flex-column mb-5 px-3">
+                                        <label for="contactMessage">Message</label>
+                                        <textarea name="contactMessage" id="contactMessage" class="w-100"></textarea>
+                                    </div>
+                                </div>
+                                <div class="text-end text-sm-center p-3">
+                                    <button type="submit" class="btn btn-dark me-0 cntSubBtn roboto">Send
+                                        Message</button>
+                                </div>
+                            </form>
+
+                            <img src="assets/images/background/letter_send 1.png" alt=""
+                                class="position-absolute contLett">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- map section  -->
+    <section class="mapSection">
+        <div class="container">
+            <div class="rounded border my-3 overflow-hidden">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.876904507173!2d88.46020366834107!3d22.621071445052426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89f6bb76bdfdd%3A0x9514046617c90a72!2sKlizo%20Solutions%20%7C%20Web%2C%20Mobile%20and%20SaaS%20Development%20Company!5e0!3m2!1sen!2sin!4v1733746960203!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer  -->
+    <footer class="border-top">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <a class="navbar-brand footerNavBrand mx-auto mx-lg-0 d-block" href="index.html">
+                        <img src="assets/images/icon/logo.png" alt="coral" class="w-100">
+                    </a>
+                    <p class="py-4 text-center text-lg-start">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua
+                    </p>
+                    <div
+                        class="socialFooter mb-5 mb-lg-0 d-flex align-items-center justify-content-lg-start justify-content-center">
+                        <a href="#" class="socialFooterLink text-decoration-none me-lg-3 me-0 px-2 px-lg-0">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="socialFooterLink text-decoration-none me-lg-3 me-0 px-2 px-lg-0">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="socialFooterLink text-decoration-none me-lg-3 me-0 px-2 px-lg-0">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="socialFooterLink text-decoration-none me-lg-3 me-0 px-2 px-lg-0">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="footerHead roboto fw-bold  ps-0 ps-lg-4  pb-3 pb-lg-4 text-center text-lg-start">CATALOG
+                    </div>
+                    <ul class="list-unstyled ps-0 ps-lg-4 mb-5 mb-lg-0">
+                        <li class="nav-item mb-2">
+                            <a href="show-products.html" class="nav-link text-capitalize active">Necklaces</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="show-products.html" class="nav-link text-capitalize active">hoodies</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="show-products.html" class="nav-link text-capitalize active">Jewelry Box</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="show-products.html" class="nav-link text-capitalize active">t-shirt</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="show-products.html" class="nav-link text-capitalize active">jacket</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="footerHead roboto fw-bold  ps-0 ps-lg-4  pb-3 pb-lg-4 text-center text-lg-start">ABOUT
+                        US</div>
+                    <ul class="list-unstyled  ps-0 ps-lg-4  mb-5 mb-lg-0">
+                        <li class="nav-item mb-2">
+                            <a href="about.html" class="nav-link text-capitalize active">About Us</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="terms.html" class="nav-link text-capitalize active">Terms & Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="footerHead roboto fw-bold  ps-0 ps-lg-4  pb-3 pb-lg-4 text-center text-lg-start">
+                        CUSTOMER SERVICES
+                    </div>
+                    <ul class="list-unstyled  ps-0 ps-lg-4  mb-5 mb-lg-0">
+                        <li class="nav-item mb-2">
+                            <a href="contact.html" class="nav-link text-capitalize active">Contact Us</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="profile.html" class="nav-link text-capitalize active">Track Your Order</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footerLast d-flex align-items-center justify-content-center">
+            <div class="m-auto text-light">
+                &copy; <span class="currentYear text-light">2024</span> - CORAL
+            </div>
+        </div>
+
+        <!-- back to top button  -->
+        <div class="backToTop d-none">
+            <i class="fa-solid fa-circle-up"></i>
+        </div>
+    </footer>
+
+
+    <!-- Modal -->
+    <!-- modal for login  -->
+    <div class="modal fade" id="accountBox" aria-hidden="true" aria-labelledby="accountBoxLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-dark" id="accountBoxLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body position-relative">
+                    <form action="">
+                        <div class="form-floating mb-3">
+                            <input type="email" name="loginEmail" class="form-control" id="loginEmail"
+                                placeholder="name@example.com">
+                            <label for="loginEmail">Email address</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" name="loginPassword" class="form-control passwordLog"
+                                id="loginPassword" placeholder="Password">
+                            <span class="btn showPassword">
+                                <i class="fa-solid fa-eye-slash"></i>
+                            </span>
+                            <label for="loginPassword">Password</label>
+                        </div>
+
+                        <div class="text-center pt-2 mt-5">
+                            <button class="btn btn-dark" type="submit">Log in</button>
+                        </div>
+                    </form>
+
+                    <div class="my-3 nav-item fgtps position-absolute">
+                        <button class="btn frgt0 nav-link text-start" data-bs-target="#fgtPass"
+                            data-bs-toggle="modal">Forgot
+                            Your Password?</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    Don't have an account?
+                    <button class="btn btnTogglerModal px-1" data-bs-target="#signUpBoxModal" data-bs-toggle="modal">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal for register  -->
+    <div class="modal fade" id="signUpBoxModal" aria-hidden="true" aria-labelledby="signUpBox" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title text-dark fs-5" id="signUpBox">Sign up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" name="emailAddress" id="emailAddress"
+                                placeholder="name@example.com">
+                            <label for="emailAddress">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" name="phoneNumber" id="phoneNumber"
+                                placeholder="name@example.com">
+                            <label for="phoneNumber">Phone Number</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control passwordLog" id="firstPassword"
+                                placeholder="Password">
+                            <span class="btn showPassword">
+                                <i class="fa-solid fa-eye-slash"></i>
+                            </span>
+                            <label for="firstPassword">Enter Password</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control passwordLog" id="confirmPassword"
+                                placeholder="Password">
+                            <span class="btn showPassword">
+                                <i class="fa-solid fa-eye-slash"></i>
+                            </span>
+                            <label for="confirmPassword">Confirm Password</label>
+                        </div>
+                        <div class="text-center pt-2 mt-2">
+                            <button class="btn btn-dark" type="submit">Sign up</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    Already have an account?
+                    <button class="btn btnTogglerModal px-1" data-bs-target="#AccountBox" data-bs-toggle="modal">
+                        Log in
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal for forget password  -->
+    <div class="modal fade" id="fgtPass" aria-hidden="true" aria-labelledby="accountBoxLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content frgt1">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-dark" id="accountBoxLabel">Forgot Password ?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body position-relative">
+                    <form action="">
+                        <div class="form-floating mb-3">
+                            <input type="email" name="loginEmail" class="form-control" id="loginEmail"
+                                placeholder="name@example.com">
+                            <label for="loginEmail">Email address</label>
+                        </div>
+
+                        <div class="text-center pt-2 mt-2">
+                            <button class="btn btn-dark sndEmail" type="submit">Request Reset-link</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    Don't have an account?
+                    <button class="btn btnTogglerModal px-1" data-bs-target="#signUpBoxModal" data-bs-toggle="modal">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- cart sideBar  -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="shoppicartSlide" aria-labelledby="shoppicartSlideLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="shoppicartSlideLabel">Shopping Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body ">
+            <div class="cartContext overflow-y-auto">
+                <ul class="list-unstyled">
+
+                    <!-- cart list loop  -->
+
+                    <li class="cartList d-flex">
+                        <a href="" class="productCartImg overflow-hidden d-block border">
+                            <img src="assets/images/products/scarf.jpg" alt="" class="w-100">
+                        </a>
+                        <div class=" ps-3 productcartBoxs d-flex flex-column justify-content-between position-relative">
+                            <div class="productCategoryOnCart fw-bold pb-2">
+                                Scarf
+                            </div>
+                            <div class="productNameOncart fw-bold text-dark pb-2">
+                                Geometric print Scarf
+                            </div>
+                            <div class=" d-flex align-items-center justify-content-between">
+                                <span class="priceBox text-dark">
+                                    &#8377;<span class="cartPrice text-dark">349</span>/-
+                                </span>
+
+                                <label for="qty d-flex">
+                                    <span class=" text-dark">QTY</span>
+                                    <input class="cartQty" type="number" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="btn cardDlt position-absolute fs-4 top-0 end-0">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="cartList d-flex">
+                        <a href="" class="productCartImg overflow-hidden d-block border">
+                            <img src="assets/images/products/dress.jpg" alt="" class="w-100">
+                        </a>
+                        <div class=" ps-3 productcartBoxs d-flex flex-column justify-content-between position-relative">
+                            <div class="productCategoryOnCart fw-bold pb-2">
+                                Dress
+                            </div>
+                            <div class="productNameOncart fw-bold text-dark pb-2">
+                                Basic Dress Green
+                            </div>
+                            <div class=" d-flex align-items-center justify-content-between">
+                                <span class="priceBox text-dark">
+                                    &#8377;<span class="cartPrice text-dark">2449</span>/-
+                                </span>
+
+                                <label for="qty d-flex">
+                                    <span class=" text-dark">QTY</span>
+                                    <input class="cartQty" type="number" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="btn cardDlt position-absolute fs-4 top-0 end-0">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="cartList d-flex">
+                        <a href="" class="productCartImg overflow-hidden d-block border">
+                            <img src="assets/images/products/jogger.jpg" alt="" class="w-100">
+                        </a>
+                        <div class=" ps-3 productcartBoxs d-flex flex-column justify-content-between position-relative">
+                            <div class="productCategoryOnCart fw-bold pb-2">
+                                Dress
+                            </div>
+                            <div class="productNameOncart fw-bold text-dark pb-2">
+                                Adicolor Classics Joggers
+                            </div>
+                            <div class=" d-flex align-items-center justify-content-between">
+                                <span class="priceBox text-dark">
+                                    &#8377;<span class="cartPrice text-dark">549</span>/-
+                                </span>
+
+                                <label for="qty d-flex">
+                                    <span class=" text-dark">QTY</span>
+                                    <input class="cartQty" type="number" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="btn cardDlt position-absolute fs-4 top-0 end-0">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="cartList d-flex">
+                        <a href="" class="productCartImg overflow-hidden d-block border">
+                            <img src="assets/images/products/futuraLuxe.jpg" alt="" class="w-100">
+                        </a>
+                        <div class=" ps-3 productcartBoxs d-flex flex-column justify-content-between position-relative">
+                            <div class="productCategoryOnCart fw-bold pb-2">
+                                Bag
+                            </div>
+                            <div class="productNameOncart fw-bold text-dark pb-2">
+                                Nike Sportswear Futura Luxe
+                            </div>
+                            <div class=" d-flex align-items-center justify-content-between">
+                                <span class="priceBox text-dark">
+                                    &#8377;<span class="cartPrice text-dark">2199</span>/-
+                                </span>
+
+                                <label for="qty d-flex">
+                                    <span class=" text-dark">QTY</span>
+                                    <input class="cartQty" type="number" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="btn cardDlt position-absolute fs-4 top-0 end-0">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="cartList d-flex">
+                        <a href="" class="productCartImg overflow-hidden d-block border">
+                            <img src="assets/images/products/hoodie.jpg" alt="" class="w-100">
+                        </a>
+                        <div class=" ps-3 productcartBoxs d-flex flex-column justify-content-between position-relative">
+                            <div class="productCategoryOnCart fw-bold pb-2">
+                                Dress
+                            </div>
+                            <div class="productNameOncart fw-bold text-dark pb-2">
+                                Yellow Reserved Hoodie
+                            </div>
+                            <div class=" d-flex align-items-center justify-content-between">
+                                <span class="priceBox text-dark">
+                                    &#8377;<span class="cartPrice text-dark">1599</span>/-
+                                </span>
+
+                                <label for="qty d-flex">
+                                    <span class=" text-dark">QTY</span>
+                                    <input class="cartQty" type="number" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="btn cardDlt position-absolute fs-4 top-0 end-0">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="cartList d-flex">
+                        <a href="" class="productCartImg overflow-hidden d-block border">
+                            <img src="assets/images/products/airZoom.jpg" alt="" class="w-100">
+                        </a>
+                        <div class=" ps-3 productcartBoxs d-flex flex-column justify-content-between position-relative">
+                            <div class="productCategoryOnCart fw-bold pb-2">
+                                Shoe
+                            </div>
+                            <div class="productNameOncart fw-bold text-dark pb-2">
+                                Nike Air Zoom Pegasus
+                            </div>
+                            <div class=" d-flex align-items-center justify-content-between">
+                                <span class="priceBox text-dark">
+                                    &#8377;<span class="cartPrice text-dark">1989</span>/-
+                                </span>
+
+                                <label for="qty d-flex">
+                                    <span class=" text-dark">QTY</span>
+                                    <input class="cartQty" type="number" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="btn cardDlt position-absolute fs-4 top-0 end-0">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="cartList d-flex">
+                        <a href="" class="productCartImg overflow-hidden d-block border">
+                            <img src="assets/images/products/glass.jpg" alt="" class="w-100">
+                        </a>
+                        <div class=" ps-3 productcartBoxs d-flex flex-column justify-content-between position-relative">
+                            <div class="productCategoryOnCart fw-bold pb-2">
+                                Glasses
+                            </div>
+                            <div class="productNameOncart fw-bold text-dark pb-2">
+                                Buffet vision
+                            </div>
+                            <div class=" d-flex align-items-center justify-content-between">
+                                <span class="priceBox text-dark">
+                                    &#8377;<span class="cartPrice text-dark">2349</span>/-
+                                </span>
+
+                                <label for="qty d-flex">
+                                    <span class=" text-dark">QTY</span>
+                                    <input class="cartQty" type="number" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="btn cardDlt position-absolute fs-4 top-0 end-0">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="cartList d-flex">
+                        <a href="" class="productCartImg overflow-hidden d-block border">
+                            <img src="assets/images/products/repelmiler.jpg" alt="" class="w-100">
+                        </a>
+                        <div class=" ps-3 productcartBoxs d-flex flex-column justify-content-between position-relative">
+                            <div class="productCategoryOnCart fw-bold pb-2">
+                                Dress
+                            </div>
+                            <div class="productNameOncart fw-bold text-dark pb-2">
+                                Nike Repel Miler
+                            </div>
+                            <div class=" d-flex align-items-center justify-content-between">
+                                <span class="priceBox text-dark">
+                                    &#8377;<span class="cartPrice text-dark">1699</span>/-
+                                </span>
+
+                                <label for="qty d-flex">
+                                    <span class=" text-dark">QTY</span>
+                                    <input class="cartQty" type="number" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="btn cardDlt position-absolute fs-4 top-0 end-0">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="text-center mt-2">
+                <a class=" btn rounded-0 btn-dark mx-auto roboto" href="cart.html">Continue
+                    Shopping</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- js  -->
+    <script src="assets/js/jQuery.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/all.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/backToTop.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FavIcon  -->
+    <link rel="apple-touch-icon" href="assets/Images/icon/favicon.png">
+    <link rel="shortcut icon" href="assets/Images/icon/favicon.png" type="image/x-icon">
+
+    <!-- css  -->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- customized css  -->
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+
+    <!-- page css  -->
+    <link rel="stylesheet" href="assets/css/profile.css">
+
+    <!-- page css  -->
+    <title>Coral -- Profile</title>
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg py-3 me-0 sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-lg-none" href="index.html">
+                <img src="assets/images/icon/logo.png" alt="coral">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav w-40">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="categories.html">categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase " href="contact.html">contact</a>
+                    </li>
+                </ul>
+
+                <ul class="brand navbar-nav w-20 d-none d-lg-block">
+                    <li class="nav-item m-auto text-center">
+                        <a class="navbar-brand m-auto" href="index.html">
+                            <img src="assets/images/icon/logo.png" alt="coral">
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="rightpannel navbar-nav w-40 justify-content-end flex-row n pe-2">
+                    <li class="nav-item">
+                        <form class="d-flex navSearchForm" role="search mx-2">
+                            <input class="navSearch" type="text" placeholder="Search product">
+                            <button class="btn btnSearch" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                    </li>
+                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Cart"
+                        title="Cart">
+                        <button class="shoppingCart nav-link d-flex justify-content-center justify-content-lg-end mx-2"
+                            data-bs-toggle="offcanvas" data-bs-target="#shoppicartSlide"
+                            aria-controls="shoppicartSlide">
+                            <span class="d-none d-md-inline me-1"></span>
+                            <div class="position-relative">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span
+                                    class="position-absolute top-10 start-100 translate-middle badge rounded-pill bg-dark text-light">
+                                    3
+                                </span>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btnAcc" href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            data-bs-title="Wishlist" title="Wishlist">
+                            <span class="d-none d-md-inline me-1"></span>
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+
+                        <!-- <button class="btn btnAcc" data-bs-target="#accountBox" data-bs-toggle="modal">
+                                <span class="d-none d-md-inline me-1"></span>
+                                <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Account"
+                                    title="Account"><i class="fa-solid fa-user"></i></span>
+                            </button> -->
+
+
+                        <!-- after login profile button will be enable and login button will disable  -->
+
+
+
+                        <a class="btn btnAcc" href="profile.html" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            data-bs-title="Profile" title="Profile">
+                            <span class="d-none d-md-inline me-1"></span>
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+
+
+                    </li>
+                    <li class="nav-item">
+                        <button
+                            class="h-100  shoppingCart nav-link d-flex justify-content-center justify-content-lg-end mx-2 align-items-center">
+                            <div data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Logout"
+                                title="Logout">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                            </div>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- section account details  -->
+    <section class="profileSection mb-4">
+        <div class="container">
+            <h1 class="text-center py-3 roboto sectHead text-capitalize text-dark">
+                My Profile
+            </h1>
+
+            <div class="row">
+                <div class="col-12 col-lg-6  p-3">
+                    <div class="detProfBox rounded border">
+                        <!-- form starts for profile edit  -->
+                        <form action="">
+                            <div class="profileDetails d-flex align-items-center justify-content-start mb-4 p-2">
+                                <div class="rounded position-relative">
+                                    <img src="assets/images/products/profp.png" alt=""
+                                        class="profilePic border userPicture">
+                                    <label class="btn btnProfPicEdit position-absolute border-0 rounded"
+                                        for="userprofilePicture">
+                                        <i class="fa-solid fa-user-pen"></i>
+                                    </label>
+                                    <input type="file" id="userprofilePicture" class="d-none">
+                                </div>
+
+
+                                <div class="ms-3">
+                                    <div class="profname roboto fw-bold text-dark fs-3">Zerom Dotsure
+                                    </div>
+                                    <div class="registeredDate fw-bold text-dark">Registered : <span>Aug 17,2024</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="profContact my-3 p-3">
+                                <h1 class="fs-4 fw-bold text-dark">Contact Details</h1>
+
+                                <hr>
+                                <div class="nameProf">
+                                    <div class="text-dark">Full Name</div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text prolfileDataInfo" id="profileName">
+                                            <i class="fa-solid fa-pencil"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Enter Full Name"
+                                            aria-describedby="profileName" value="Zerom Dotsure" disabled>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="nameProf">
+                                    <div class="text-dark">Phone Number</div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text prolfileDataInfo" id="profileNumber">
+                                            <i class="fa-solid fa-pencil"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Enter Mobile Number"
+                                            aria-describedby="profileNumber" value="012345678" disabled>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="nameProf">
+                                    <div class="text-dark">Email</div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text prolfileDataInfo" id="profileEmail">
+                                            <i class="fa-solid fa-pencil"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Enter Email Address"
+                                            aria-describedby="profileEmail" value="zerom.otsure@email.com" disabled>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="nameProf addressFieldBox position-relative">
+                                    <div class="mb-3 text-dark">Address</div>
+                                    <span class="editAddress rounded bg-transparent position-absolute end-0 top-0">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </span>
+                                    <div class="input-group my-1">
+                                        <span class="input-group-text" id="addressLine1">Address Line 1</span>
+                                        <input type="text" class="form-control addressFieldsInpSect"
+                                            placeholder="Enter Address" aria-describedby="addressLine1" value="Area 43"
+                                            disabled>
+                                    </div>
+                                    <div class="input-group flex-nowrap my-1">
+                                        <span class="input-group-text" id="street">Street</span>
+                                        <input type="text" class="form-control addressFieldsInpSect"
+                                            placeholder="street" aria-describedby="street" value="Klizo's street"
+                                            disabled>
+                                    </div>
+                                    <div class="input-group flex-nowrap my-1">
+                                        <span class="input-group-text" id="cities">City</span>
+                                        <input type="text" class="form-control addressFieldsInpSect"
+                                            placeholder="cities" aria-describedby="cities" value="Klizo's cities"
+                                            disabled>
+                                    </div>
+                                    <div class="input-group my-1">
+                                        <label class="input-group-text" for="stateAddress">State</label>
+                                        <select class="form-select addressFieldsInpSect" id="stateAddress" disabled>
+                                            <option selected>Choose...</option>
+                                            <option value="1">Andhra Pradesh</option>
+                                            <option value="2">Kerala</option>
+                                            <option value="3">Goa</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group my-1">
+                                        <label class="input-group-text" for="addressCountry">Country</label>
+                                        <select class="form-select addressFieldsInpSect" id="addressCountry" disabled>
+                                            <option selected>Choose...</option>
+                                            <option value="1">India</option>
+                                            <option value="2">Dubai</option>
+                                            <option value="3">Nepal</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group flex-nowrap my-1">
+                                        <span class="input-group-text" id="zip">Zip</span>
+                                        <input type="text" class="form-control addressFieldsInpSect" placeholder="zip"
+                                            aria-describedby="zip" value="Klizo's zip" disabled>
+                                    </div>
+                                </div>
+
+                                <script>
+
+                                </script>
+                                <hr>
+                                <div class="text-center mt-2">
+                                    <button class="btn btn-dark updateDetails d-none">
+                                        Update Details
+                                    </button>
+                                </div>
+                            </div>
+
+                        </form>
+                        <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center my-2">
+                            <button class="btn goBackBtn btn-dark d-flex align-items-center justify-content-center m-1"
+                                onclick="history.back()">
+                                <i class="fa-solid fa-left-long me-2"></i>
+                                <span class="text-light fw-bold">Go back</span>
+                            </button>
+                            <a href="reset-password.html" class="btn btn-dark whiteIcon m-1">
+                                <i class="fa-solid fa-unlock-keyhole me-2"></i>
+                                Change password
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 p-3">
+                    <div class="detProfBox  rounded border">
+                        <div class="profContact profRightBox my-3 p-3">
+
+                            <!-- orders  -->
+                            <h1 class="fs-4 fw-bold text-dark">Orders</h1>
+
+                            <!-- order list box is here  -->
+                            <div class="orderListBox">
+                                <!-- product list loop  -->
+
+                                <div class="rounded border my-2 p-3 ">
+                                    <div class="prdctName prdctClr fw-bold fs-4 mb-3">
+                                        Pink T-Shirt for Men
+                                    </div>
+                                    <div class="col-12 hh-grayBox">
+                                        <div class="row justify-content-between">
+                                            <div class="order-tracking completed">
+                                                <span class="is-complete"></span>
+                                                <p>Ordered<br><span>November 20, 2024</span></p>
+                                            </div>
+                                            <div class="order-tracking completed">
+                                                <span class="is-complete"></span>
+                                                <p>Shipped<br><span>November 25, 2024</span></p>
+                                            </div>
+                                            <div class="order-tracking ">
+                                                <span class="is-complete"></span>
+                                                <p>Delivered<br><span>October 20, 2024</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex align-items-center justify-content-between fw-bold">
+                                        <div class="qtyPrdct text-dark">Quantity : <span class="prdctClr">3</span></div>
+                                        <a href="view-order.html" class="btn btn-dark">View details</a>
+                                    </div>
+
+                                </div>
+
+                                <div class="rounded border my-2 p-3 ">
+                                    <div class="prdctName prdctClr fw-bold fs-4 mb-3">
+                                        Pink T-Shirt for Men
+                                    </div>
+                                    <div class="col-12 hh-grayBox">
+                                        <div class="row justify-content-between">
+                                            <div class="order-tracking completed">
+                                                <span class="is-complete"></span>
+                                                <p>Ordered<br><span>August 20, 2024</span></p>
+                                            </div>
+                                            <div class="order-tracking completed">
+                                                <span class="is-complete"></span>
+                                                <p>Shipped<br><span>August 26, 2024</span></p>
+                                            </div>
+                                            <div class="order-tracking completed">
+                                                <span class="is-complete"></span>
+                                                <p>Delivered<br><span>September 08, 2024</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex align-items-center justify-content-between fw-bold">
+                                        <div class="qtyPrdct text-dark">Quantity : <span class="prdctClr">3</span></div>
+                                        <a href="view-order.html" class="btn btn-dark">View details</a>
+                                    </div>
+
+                                </div>
+
+                                <div class="rounded border my-2 p-3 ">
+                                    <div class="prdctName prdctClr fw-bold fs-4 mb-3">
+                                        Pink T-Shirt for Men
+                                    </div>
+                                    <div class="col-12 hh-grayBox">
+                                        <div class="row justify-content-between">
+                                            <div class="order-tracking completed">
+                                                <span class="is-complete"></span>
+                                                <p>Ordered<br><span>January 19, 2024</span></p>
+                                            </div>
+                                            <div class="order-tracking completed">
+                                                <span class="is-complete"></span>
+                                                <p>Shipped<br><span>January 20, 2024</span></p>
+                                            </div>
+                                            <div class="order-tracking completed">
+                                                <span class="is-complete"></span>
+                                                <p>Delivered<br><span>February 03, 2024</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex align-items-center justify-content-between  fw-bold">
+                                        <div class="qtyPrdct text-dark">Quantity : <span class="prdctClr">3</span></div>
+                                        <a href="view-order.html" class="btn btn-dark">View details</a>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+                            <!-- end order list box  -->
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="detProfBox  rounded border">
+                        <div class="profContact profRightBox my-3 p-3">
+                            <h1 class="fs-4 fw-bold text-dark">Reviews</h1>
+
+                            <!-- reviews box is here  -->
+                            <div class="revBoxData">
+                                <div class="reviewBox my-2 border rounded p-3 position-relative">
+                                    <a class="revPrdctDet d-flex pb-2 text-decoration-none" href="#">
+                                        <div class="prdctImg">
+                                            <img src="assets/images/products/product.jpg" alt="" class="w-100">
+                                        </div>
+                                        <div class="prdctName prdctClr fw-bold fs-4 mb-3 ms-3">
+                                            Pink T-Shirt for Men
+                                        </div>
+                                    </a>
+                                    <div>
+                                        <div class="reviewStars mt-2">
+                                            <i class="fa-solid fa-star me-1"></i>
+                                            <i class="fa-solid fa-star me-1"></i>
+                                            <i class="fa-solid fa-star me-1"></i>
+                                        </div>
+                                        <p class="reviewText text-dark">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis officia
+                                            asperiores maxime soluta numquam enim nihil! Ullam tempore similique illum
+                                            earum
+                                            totam, a omnis illo doloribus blanditiis distinctio aut qui.
+                                        </p>
+                                        <div class="reviewTime">
+                                            &mdash; <span>January 19, 2024</span>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="editRegisteredBtn rounded border position-absolute bottom-0 end-0 text-dark p-2 m-1"
+                                        type="button" data-bs-target="#setUpReviewsEdit" data-bs-toggle="modal">
+                                        <i class="fa-solid fa-pencil"></i>
+                                        Edit This Reviews
+                                    </button>
+                                </div>
+
+                                <div class="reviewBox my-2 border rounded p-3 position-relative">
+                                    <a class="revPrdctDet d-flex pb-2 text-decoration-none" href="#">
+                                        <div class="prdctImg">
+                                            <img src="assets/images/products/product.jpg" alt="" class="w-100">
+                                        </div>
+                                        <div class="prdctName prdctClr fw-bold fs-4 mb-3 ms-3">
+                                            Pink T-Shirt for Men
+                                        </div>
+                                    </a>
+                                    <div>
+                                        <div class="reviewStars mt-2">
+                                            <i class="fa-solid fa-star me-1"></i>
+                                            <i class="fa-solid fa-star me-1"></i>
+                                            <i class="fa-solid fa-star me-1"></i>
+                                            <i class="fa-solid fa-star me-1"></i>
+                                        </div>
+                                        <p class="reviewText text-dark">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis officia
+                                            asperiores maxime soluta numquam enim nihil! Ullam tempore similique illum
+                                            earum
+                                            totam, a omnis illo doloribus blanditiis distinctio aut qui.
+                                        </p>
+                                        <div class="reviewTime">
+                                            &mdash; <span>January 19, 2024</span>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="editRegisteredBtn rounded border position-absolute bottom-0 end-0 text-dark p-2 m-1"
+                                        type="button" data-bs-target="#setUpReviewsEdit" data-bs-toggle="modal">
+                                        <i class="fa-solid fa-pencil"></i>
+                                        Edit This Reviews
+                                    </button>
+                                </div>
+                                <div class="reviewBox my-2 border rounded p-3 position-relative">
+                                    <a class="revPrdctDet d-flex pb-2 text-decoration-none" href="#">
+                                        <div class="prdctImg">
+                                            <img src="assets/images/products/product.jpg" alt="" class="w-100">
+                                        </div>
+                                        <div class="prdctName prdctClr fw-bold fs-4 mb-3 ms-3">
+                                            Pink T-Shirt for Men
+                                        </div>
+                                    </a>
+                                    <div>
+                                        <div class="reviewStars mt-2">
+                                            <i class="fa-solid fa-star me-1"></i>
+                                            <i class="fa-solid fa-star me-1"></i>
+                                            <i class="fa-solid fa-star me-1"></i>
+                                            <i class="fa-solid fa-star me-1"></i>
+                                        </div>
+                                        <p class="reviewText text-dark">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis officia
+                                            asperiores maxime soluta numquam enim nihil! Ullam tempore similique illum
+                                            earum
+                                            totam, a omnis illo doloribus blanditiis distinctio aut qui.
+                                        </p>
+                                        <div class="reviewTime">
+                                            &mdash; <span>January 19, 2024</span>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="editRegisteredBtn rounded border position-absolute bottom-0 end-0 text-dark p-2 m-1"
+                                        type="button" data-bs-target="#setUpReviewsEdit" data-bs-toggle="modal">
+                                        <i class="fa-solid fa-pencil"></i>
+                                        Edit This Reviews
+                                    </button>
+                                </div>
+                                <div class="reviewBox my-2 border rounded p-3 position-relative">
+                                    <a class="revPrdctDet d-flex pb-2 text-decoration-none" href="#">
+                                        <div class="prdctImg">
+                                            <img src="assets/images/products/product.jpg" alt="" class="w-100">
+                                        </div>
+                                        <div class="prdctName prdctClr fw-bold fs-4 mb-3 ms-3">
+                                            Pink T-Shirt for Men
+                                        </div>
+                                    </a>
+                                    <div>
+                                        <div class="reviewStars mt-2">
+                                            <i class="fa-solid fa-star me-1"></i>
+                                            <i class="fa-solid fa-star me-1"></i>
+                                            <i class="fa-solid fa-star me-1"></i>
+                                            <i class="fa-solid fa-star me-1"></i>
+                                        </div>
+                                        <p class="reviewText text-dark">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis officia
+                                            asperiores maxime soluta numquam enim nihil! Ullam tempore similique illum
+                                            earum
+                                            totam, a omnis illo doloribus blanditiis distinctio aut qui.
+                                        </p>
+                                        <div class="reviewTime">
+                                            &mdash; <span>January 19, 2024</span>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="editRegisteredBtn rounded border position-absolute bottom-0 end-0 text-dark p-2 m-1"
+                                        type="button" data-bs-target="#setUpReviewsEdit" data-bs-toggle="modal">
+                                        <i class="fa-solid fa-pencil"></i>
+                                        Edit This Reviews
+                                    </button>
+                                </div>
+                                <div class="reviewBox my-2 border rounded p-3 position-relative">
+                                    <a class="revPrdctDet d-flex pb-2 text-decoration-none" href="#">
+                                        <div class="prdctImg">
+                                            <img src="assets/images/products/product.jpg" alt="" class="w-100">
+                                        </div>
+                                        <div class="prdctName prdctClr fw-bold fs-4 mb-3 ms-3">
+                                            Pink T-Shirt for Men
+                                        </div>
+                                    </a>
+                                    <div>
+                                        <div class="reviewStars mt-2">
+                                            <i class="fa-solid fa-star me-1"></i>
+                                            <i class="fa-solid fa-star me-1"></i>
+                                            <i class="fa-solid fa-star me-1"></i>
+                                            <i class="fa-solid fa-star me-1"></i>
+                                        </div>
+                                        <p class="reviewText text-dark">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis officia
+                                            asperiores maxime soluta numquam enim nihil! Ullam tempore similique illum
+                                            earum
+                                            totam, a omnis illo doloribus blanditiis distinctio aut qui.
+                                        </p>
+                                        <div class="reviewTime">
+                                            &mdash; <span>January 19, 2024</span>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="editRegisteredBtn rounded border position-absolute bottom-0 end-0 text-dark p-2 m-1"
+                                        type="button" data-bs-target="#setUpReviewsEdit" data-bs-toggle="modal">
+                                        <i class="fa-solid fa-pencil"></i>
+                                        Edit This Reviews
+                                    </button>
+                                </div>
+                                <div class="reviewBox my-2 border rounded p-3 position-relative">
+                                    <a class="revPrdctDet d-flex pb-2 text-decoration-none" href="#">
+                                        <div class="prdctImg">
+                                            <img src="assets/images/products/product.jpg" alt="" class="w-100">
+                                        </div>
+                                        <div class="prdctName prdctClr fw-bold fs-4 mb-3 ms-3">
+                                            Pink T-Shirt for Men
+                                        </div>
+                                    </a>
+                                    <div>
+                                        <div class="reviewStars mt-2">
+                                            <i class="fa-solid fa-star me-1"></i>
+                                            <i class="fa-solid fa-star me-1"></i>
+                                            <i class="fa-solid fa-star me-1"></i>
+                                            <i class="fa-solid fa-star me-1"></i>
+                                        </div>
+                                        <p class="reviewText text-dark">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis officia
+                                            asperiores maxime soluta numquam enim nihil! Ullam tempore similique illum
+                                            earum
+                                            totam, a omnis illo doloribus blanditiis distinctio aut qui.
+                                        </p>
+                                        <div class="reviewTime">
+                                            &mdash; <span>January 19, 2024</span>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="editRegisteredBtn rounded border position-absolute bottom-0 end-0 text-dark p-2 m-1"
+                                        type="button" data-bs-target="#setUpReviewsEdit" data-bs-toggle="modal">
+                                        <i class="fa-solid fa-pencil"></i>
+                                        Edit This Reviews
+                                    </button>
+                                </div>
+
+
+                            </div>
+                            <!-- end of reviews box -->
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer  -->
+    <footer class="border-top">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <a class="navbar-brand footerNavBrand mx-auto mx-lg-0 d-block" href="index.html">
+                        <img src="assets/images/icon/logo.png" alt="coral" class="w-100">
+                    </a>
+                    <p class="py-4 text-center text-lg-start">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua
+                    </p>
+                    <div
+                        class="socialFooter mb-5 mb-lg-0 d-flex align-items-center justify-content-lg-start justify-content-center">
+                        <a href="#" class="socialFooterLink text-decoration-none me-lg-3 me-0 px-2 px-lg-0">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="socialFooterLink text-decoration-none me-lg-3 me-0 px-2 px-lg-0">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="socialFooterLink text-decoration-none me-lg-3 me-0 px-2 px-lg-0">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="socialFooterLink text-decoration-none me-lg-3 me-0 px-2 px-lg-0">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="footerHead roboto fw-bold  ps-0 ps-lg-4  pb-3 pb-lg-4 text-center text-lg-start">CATALOG
+                    </div>
+                    <ul class="list-unstyled ps-0 ps-lg-4 mb-5 mb-lg-0">
+                        <li class="nav-item mb-2">
+                            <a href="show-products.html" class="nav-link text-capitalize active">Necklaces</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="show-products.html" class="nav-link text-capitalize active">hoodies</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="show-products.html" class="nav-link text-capitalize active">Jewelry Box</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="show-products.html" class="nav-link text-capitalize active">t-shirt</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="show-products.html" class="nav-link text-capitalize active">jacket</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="footerHead roboto fw-bold  ps-0 ps-lg-4  pb-3 pb-lg-4 text-center text-lg-start">ABOUT
+                        US</div>
+                    <ul class="list-unstyled  ps-0 ps-lg-4  mb-5 mb-lg-0">
+                        <li class="nav-item mb-2">
+                            <a href="about.html" class="nav-link text-capitalize active">About Us</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="terms.html" class="nav-link text-capitalize active">Terms & Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="footerHead roboto fw-bold  ps-0 ps-lg-4  pb-3 pb-lg-4 text-center text-lg-start">
+                        CUSTOMER SERVICES
+                    </div>
+                    <ul class="list-unstyled  ps-0 ps-lg-4  mb-5 mb-lg-0">
+                        <li class="nav-item mb-2">
+                            <a href="contact.html" class="nav-link text-capitalize active">Contact Us</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="profile.html" class="nav-link text-capitalize active">Track Your Order</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footerLast d-flex align-items-center justify-content-center">
+            <div class="m-auto text-light">
+                &copy; <span class="currentYear text-light">2024</span> - CORAL
+            </div>
+        </div>
+
+        <!-- back to top button  -->
+        <div class="backToTop d-none">
+            <i class="fa-solid fa-circle-up"></i>
+        </div>
+    </footer>
+
+
+
+    <!-- modal  -->
+    <div class="modal fade" id="forProfileSetUp" aria-hidden="true" aria-labelledby="signUpBox" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title text-dark fs-5" id="signUpBox">Change Your Datails</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" name="firstName" id="firstName"
+                                placeholder="name@example.com">
+                            <label for="firstName">First Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" name="lastName" id="lastName"
+                                placeholder="name@example.com">
+                            <label for="lastName">Last Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" name="phoneNumber" id="phoneNumber"
+                                placeholder="name@example.com">
+                            <label for="phoneNumber">Phone Number</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" name="emailAddress" id="emailAddress"
+                                placeholder="name@example.com">
+                            <label for="emailAddress">Email address</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Address</label>
+                        </div>
+                        <div class="text-center pt-2 mt-2">
+                            <button class="btn btn-dark" type="submit">Save Changes</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- modal for edit category  -->
+    <div class="modal fade" id="setUpReviewsEdit" aria-hidden="true" aria-labelledby="setUpReviewsEditLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-dark" id="setUpReviewsEditLabel">Edit Category</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-floating mb-2">
+                            <textarea class="form-control revInp" placeholder="Leave a comment here" id="reviewBoxInp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis officia asperiores maxime soluta numquam enim nihil!Ullam tempore similique illum earum totam, a omnis illo doloribus blanditiis distinctio aut qui.
+                            </textarea>
+                            <label for="reviewBoxInp">Comments</label>
+                        </div>
+                        <div class="ratingBox d-flex align-items-center fw-bold text-dark">
+                            <span class="rt">Rate Us :</span>
+                            <div class="ratingStars ms-2">
+                                <input value="5" name="value-radio" id="value-1" type="radio" class="star s1" />
+                                <input value="4" name="value-radio" id="value-2" type="radio" class="star s2" checked />
+                                <input value="3" name="value-radio" id="value-3" type="radio" class="star s3" />
+                                <input value="2" name="value-radio" id="value-4" type="radio" class="star s4" />
+                                <input value="1" name="value-radio" id="value-5" type="radio" class="star s5" />
+                            </div>
+                        </div>
+                        <button class="btn btn-dark">Change review</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- cart sideBar  -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="shoppicartSlide" aria-labelledby="shoppicartSlideLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="shoppicartSlideLabel">Shopping Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body ">
+            <div class="cartContext overflow-y-auto">
+                <ul class="list-unstyled">
+
+                    <!-- cart list loop  -->
+
+                    <li class="cartList d-flex">
+                        <a href="" class="productCartImg overflow-hidden d-block border">
+                            <img src="assets/images/products/scarf.jpg" alt="" class="w-100">
+                        </a>
+                        <div class=" ps-3 productcartBoxs d-flex flex-column justify-content-between position-relative">
+                            <div class="productCategoryOnCart fw-bold pb-2">
+                                Scarf
+                            </div>
+                            <div class="productNameOncart fw-bold text-dark pb-2">
+                                Geometric print Scarf
+                            </div>
+                            <div class=" d-flex align-items-center justify-content-between">
+                                <span class="priceBox text-dark">
+                                    &#8377;<span class="cartPrice text-dark">349</span>/-
+                                </span>
+
+                                <label for="qty d-flex">
+                                    <span class=" text-dark">QTY</span>
+                                    <input class="cartQty" type="number" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="btn cardDlt position-absolute fs-4 top-0 end-0">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="cartList d-flex">
+                        <a href="" class="productCartImg overflow-hidden d-block border">
+                            <img src="assets/images/products/dress.jpg" alt="" class="w-100">
+                        </a>
+                        <div class=" ps-3 productcartBoxs d-flex flex-column justify-content-between position-relative">
+                            <div class="productCategoryOnCart fw-bold pb-2">
+                                Dress
+                            </div>
+                            <div class="productNameOncart fw-bold text-dark pb-2">
+                                Basic Dress Green
+                            </div>
+                            <div class=" d-flex align-items-center justify-content-between">
+                                <span class="priceBox text-dark">
+                                    &#8377;<span class="cartPrice text-dark">2449</span>/-
+                                </span>
+
+                                <label for="qty d-flex">
+                                    <span class=" text-dark">QTY</span>
+                                    <input class="cartQty" type="number" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="btn cardDlt position-absolute fs-4 top-0 end-0">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="cartList d-flex">
+                        <a href="" class="productCartImg overflow-hidden d-block border">
+                            <img src="assets/images/products/jogger.jpg" alt="" class="w-100">
+                        </a>
+                        <div class=" ps-3 productcartBoxs d-flex flex-column justify-content-between position-relative">
+                            <div class="productCategoryOnCart fw-bold pb-2">
+                                Dress
+                            </div>
+                            <div class="productNameOncart fw-bold text-dark pb-2">
+                                Adicolor Classics Joggers
+                            </div>
+                            <div class=" d-flex align-items-center justify-content-between">
+                                <span class="priceBox text-dark">
+                                    &#8377;<span class="cartPrice text-dark">549</span>/-
+                                </span>
+
+                                <label for="qty d-flex">
+                                    <span class=" text-dark">QTY</span>
+                                    <input class="cartQty" type="number" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="btn cardDlt position-absolute fs-4 top-0 end-0">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="cartList d-flex">
+                        <a href="" class="productCartImg overflow-hidden d-block border">
+                            <img src="assets/images/products/futuraLuxe.jpg" alt="" class="w-100">
+                        </a>
+                        <div class=" ps-3 productcartBoxs d-flex flex-column justify-content-between position-relative">
+                            <div class="productCategoryOnCart fw-bold pb-2">
+                                Bag
+                            </div>
+                            <div class="productNameOncart fw-bold text-dark pb-2">
+                                Nike Sportswear Futura Luxe
+                            </div>
+                            <div class=" d-flex align-items-center justify-content-between">
+                                <span class="priceBox text-dark">
+                                    &#8377;<span class="cartPrice text-dark">2199</span>/-
+                                </span>
+
+                                <label for="qty d-flex">
+                                    <span class=" text-dark">QTY</span>
+                                    <input class="cartQty" type="number" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="btn cardDlt position-absolute fs-4 top-0 end-0">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="cartList d-flex">
+                        <a href="" class="productCartImg overflow-hidden d-block border">
+                            <img src="assets/images/products/hoodie.jpg" alt="" class="w-100">
+                        </a>
+                        <div class=" ps-3 productcartBoxs d-flex flex-column justify-content-between position-relative">
+                            <div class="productCategoryOnCart fw-bold pb-2">
+                                Dress
+                            </div>
+                            <div class="productNameOncart fw-bold text-dark pb-2">
+                                Yellow Reserved Hoodie
+                            </div>
+                            <div class=" d-flex align-items-center justify-content-between">
+                                <span class="priceBox text-dark">
+                                    &#8377;<span class="cartPrice text-dark">1599</span>/-
+                                </span>
+
+                                <label for="qty d-flex">
+                                    <span class=" text-dark">QTY</span>
+                                    <input class="cartQty" type="number" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="btn cardDlt position-absolute fs-4 top-0 end-0">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="cartList d-flex">
+                        <a href="" class="productCartImg overflow-hidden d-block border">
+                            <img src="assets/images/products/airZoom.jpg" alt="" class="w-100">
+                        </a>
+                        <div class=" ps-3 productcartBoxs d-flex flex-column justify-content-between position-relative">
+                            <div class="productCategoryOnCart fw-bold pb-2">
+                                Shoe
+                            </div>
+                            <div class="productNameOncart fw-bold text-dark pb-2">
+                                Nike Air Zoom Pegasus
+                            </div>
+                            <div class=" d-flex align-items-center justify-content-between">
+                                <span class="priceBox text-dark">
+                                    &#8377;<span class="cartPrice text-dark">1989</span>/-
+                                </span>
+
+                                <label for="qty d-flex">
+                                    <span class=" text-dark">QTY</span>
+                                    <input class="cartQty" type="number" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="btn cardDlt position-absolute fs-4 top-0 end-0">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="cartList d-flex">
+                        <a href="" class="productCartImg overflow-hidden d-block border">
+                            <img src="assets/images/products/glass.jpg" alt="" class="w-100">
+                        </a>
+                        <div class=" ps-3 productcartBoxs d-flex flex-column justify-content-between position-relative">
+                            <div class="productCategoryOnCart fw-bold pb-2">
+                                Glasses
+                            </div>
+                            <div class="productNameOncart fw-bold text-dark pb-2">
+                                Buffet vision
+                            </div>
+                            <div class=" d-flex align-items-center justify-content-between">
+                                <span class="priceBox text-dark">
+                                    &#8377;<span class="cartPrice text-dark">2349</span>/-
+                                </span>
+
+                                <label for="qty d-flex">
+                                    <span class=" text-dark">QTY</span>
+                                    <input class="cartQty" type="number" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="btn cardDlt position-absolute fs-4 top-0 end-0">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="cartList d-flex">
+                        <a href="" class="productCartImg overflow-hidden d-block border">
+                            <img src="assets/images/products/repelmiler.jpg" alt="" class="w-100">
+                        </a>
+                        <div class=" ps-3 productcartBoxs d-flex flex-column justify-content-between position-relative">
+                            <div class="productCategoryOnCart fw-bold pb-2">
+                                Dress
+                            </div>
+                            <div class="productNameOncart fw-bold text-dark pb-2">
+                                Nike Repel Miler
+                            </div>
+                            <div class=" d-flex align-items-center justify-content-between">
+                                <span class="priceBox text-dark">
+                                    &#8377;<span class="cartPrice text-dark">1699</span>/-
+                                </span>
+
+                                <label for="qty d-flex">
+                                    <span class=" text-dark">QTY</span>
+                                    <input class="cartQty" type="number" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="btn cardDlt position-absolute fs-4 top-0 end-0">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="text-center mt-2">
+                <a class=" btn rounded-0 btn-dark mx-auto roboto" href="cart.html">Continue
+                    Shopping</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- js  -->
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/backToTop.js"></script>
+    <script src="assets/js/profile.js"></script>
+
+
+</body>
+
+</html>

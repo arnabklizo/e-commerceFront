@@ -1,0 +1,35 @@
+.editRegister path {
+    color: #780000;
+}
+
+.reviewDltBtn,
+.editRegister,
+.editRegisteredBtn {
+    padding: 5px 20px;
+    box-shadow: 0px 0px 10px #ddd;
+}
+
+.reviewDltBtn:hover,
+.editRegisteredBtn:hover,
+.editRegister:hover {
+    box-shadow: 0px 0px 10px #ddd,
+        inset 0px 0px 10px #bbb;
+}
+
+.editRegister:hover path {
+    color: #e63946;
+    background-color: var(--bsWhite);
+}
+
+.reviewDltBtn path {
+    color: #1d7066;
+}
+
+.reviewDltBtn:hover path {
+    color: #2a9d8f;
+}
+
+.dashBoardContainer {
+    height: calc(100vh - 126px);
+    overflow-y: auto;
+}
